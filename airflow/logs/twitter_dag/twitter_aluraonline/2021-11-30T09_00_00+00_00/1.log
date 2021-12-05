@@ -1,0 +1,30 @@
+[2021-12-01 16:37:10,865] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.twitter_aluraonline 2021-11-30T09:00:00+00:00 [queued]>
+[2021-12-01 16:37:10,873] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.twitter_aluraonline 2021-11-30T09:00:00+00:00 [queued]>
+[2021-12-01 16:37:10,873] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-01 16:37:10,873] {taskinstance.py:881} INFO - Starting attempt 1 of 1
+[2021-12-01 16:37:10,873] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-01 16:37:10,881] {taskinstance.py:901} INFO - Executing <Task(TwitterOperator): twitter_aluraonline> on 2021-11-30T09:00:00+00:00
+[2021-12-01 16:37:10,882] {standard_task_runner.py:54} INFO - Started process 1917 to run task
+[2021-12-01 16:37:10,938] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'twitter_dag', 'twitter_aluraonline', '2021-11-30T09:00:00+00:00', '--job_id', '37', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/twitter_dag.py', '--cfg_path', '/tmp/tmppxvz02a5']
+[2021-12-01 16:37:10,938] {standard_task_runner.py:78} INFO - Job 37: Subtask twitter_aluraonline
+[2021-12-01 16:37:10,960] {logging_mixin.py:112} INFO - Running <TaskInstance: twitter_dag.twitter_aluraonline 2021-11-30T09:00:00+00:00 [running]> on host kauai-VirtualBox
+[2021-12-01 16:37:11,006] {base_hook.py:89} INFO - Using connection to: id: twitter_default. Host: https://api.twitter.com, Port: None, Schema: None, Login: None, Password: None, extra: XXXXXXXX
+[2021-12-01 16:37:11,010] {twitter_hook.py:36} INFO - URL: https://api.twitter.com/2/tweets/search/recent?query=AluraOnline&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2021-11-30T09:00:00.00Z&end_time=2021-12-01T09:00:00.00Z
+[2021-12-01 16:37:11,276] {logging_mixin.py:112} WARNING - /home/kauai/datapipeline/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.twitter.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[2021-12-01 16:37:11,696] {twitter_hook.py:36} INFO - URL: https://api.twitter.com/2/tweets/search/recent?query=AluraOnline&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2021-11-30T09:00:00.00Z&end_time=2021-12-01T09:00:00.00Z&next_token=b26v89c19zqg8o3fpdy7ocyfu4mdtelzgtpti1jjmavlp
+[2021-12-01 16:37:11,697] {logging_mixin.py:112} WARNING - /home/kauai/datapipeline/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.twitter.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[2021-12-01 16:37:12,101] {twitter_hook.py:36} INFO - URL: https://api.twitter.com/2/tweets/search/recent?query=AluraOnline&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2021-11-30T09:00:00.00Z&end_time=2021-12-01T09:00:00.00Z&next_token=b26v89c19zqg8o3fpdy7ocx90j1bqspd8a0vw3bwal1ml
+[2021-12-01 16:37:12,102] {logging_mixin.py:112} WARNING - /home/kauai/datapipeline/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.twitter.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[2021-12-01 16:37:12,536] {twitter_hook.py:36} INFO - URL: https://api.twitter.com/2/tweets/search/recent?query=AluraOnline&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2021-11-30T09:00:00.00Z&end_time=2021-12-01T09:00:00.00Z&next_token=b26v89c19zqg8o3fpdy7oau0k8n05x77f0rz1xvel3ywt
+[2021-12-01 16:37:12,537] {logging_mixin.py:112} WARNING - /home/kauai/datapipeline/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.twitter.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[2021-12-01 16:37:13,021] {twitter_hook.py:36} INFO - URL: https://api.twitter.com/2/tweets/search/recent?query=AluraOnline&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2021-11-30T09:00:00.00Z&end_time=2021-12-01T09:00:00.00Z&next_token=b26v89c19zqg8o3fpdy7oatf2ex2g7wp87zo0jbfldyf1
+[2021-12-01 16:37:13,022] {logging_mixin.py:112} WARNING - /home/kauai/datapipeline/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.twitter.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[2021-12-01 16:37:13,377] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=twitter_dag, task_id=twitter_aluraonline, execution_date=20211130T090000, start_date=20211201T193710, end_date=20211201T193713
+[2021-12-01 16:37:15,875] {local_task_job.py:102} INFO - Task exited with return code 0
